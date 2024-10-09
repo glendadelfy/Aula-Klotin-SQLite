@@ -9,7 +9,7 @@ import java.lang.Exception
 class DataBaseHelper(context:Context):SQLiteOpenHelper(
     //1.Context
     //2.Nome do banco de dados
-    //3.CursoFactory
+    //3.CursorFactory
     //4.Versão do banco
 
     context,"loja",null,1
@@ -32,7 +32,7 @@ class DataBaseHelper(context:Context):SQLiteOpenHelper(
     }
 
     override fun onUpgrade(db: SQLiteDatabase?, oldVersion: Int, newVersion: Int) {
-        TODO("Not yet implemented")
+        //É executado quando há mudança de versão do banco
     }
 
 }
